@@ -1,7 +1,5 @@
 #include <PxMatrix.h>
-#include <Fonts/vnarial9pt7b.h>
 #include <Ticker.h>
-#include "hiragana10.h"
 
 // Pins for LED MATRIX
 #define P_LAT 16
@@ -87,10 +85,7 @@ void scroll_text(uint8_t ypos, unsigned long scroll_delay, String text, uint8_t 
 
 void loop() {
   String text;
-  //display.setFont(&arial9pt7b);
-  //text = "Bảo vệ môi trường là những hoạt động giữ cho môi trường trong lành, sạch đẹp.Cải thiện môi trường, đảm bảo cân bằng sinh thái.";
-  text = "さようなら";
-  display.setFont(&hiragana10pt8b);
+  text = "Bảo vệ môi trường là những hoạt động giữ cho môi trường trong lành, sạch đẹp.Cải thiện môi trường, đảm bảo cân bằng sinh thái.";
   scroll_text(20,60,text,96,96,250);
   display.clearDisplay();
 
