@@ -21,48 +21,6 @@ For that purpose, I propose to myself to test common LED matrix modules with com
 * Control the LED module with Raspberry Pi (more pins to use, but more expensive and other complications (voltage...)): [here](https://github.com/hzeller/rpi-rgb-led-matrix/);
 * or with an ESP32 and [this library](https://github.com/mrfaptastic/ESP32-RGB64x32MatrixPanel-I2S-DMA).
 
-## Control P10 32x16 Red with Arduino Uno
-
-![](img/p10-uno.jpeg)
-
-Materials:
-
-* LED matrix module of type P10, connectors of type HUB12. There is "P10(1R)-806-A" and DIP-DP4536" written on the back of the module.
-* Arduino Uno 
-
-Accessories:
-
-* Power source: 5A 20A (more than enough) and power cables
-* IDC 2x8 ribbon cable (optional)
-* 7 male-male dupont cables
-
-Wiring:
-
-```
-          port in
-        -----------
-D9  ←   OE        A   →  D6
-GND ←   N         B   →  D7
-        N         C
-        N         S   →  D13
-        N         L   →  D8
-        N         R   →  D11
-        N         G
-        N         D
-```
-
-> Source: See [this guide](https://youtu.be/z5G-HO3mFV0) at 1:36 for wiring
-
-Libraries:
-
-* Install DMD2 from Arduino IDE's Library Manager
-
-### TODOs
-
-Make a connector PCB like this [DMDCon](https://cdn.shopify.com/s/files/1/0045/8932/products/DMDCON-1_1024x1024.jpg?v=1489536771) (its drawing can be found [here](https://cdn.shopify.com/s/files/1/0045/8932/files/DMDCON_DMDConnector.pdf?100730)).
-
-But we will do it simpler: same wiring as above, the only modification for safety is that all N will go to GND. We will forget completely C, D and G.
-
 ## Control P5 fullcolor 64x32 with ESP8266
 
 The avantage of an ESP8266 board is that it is controllable via Internet, and those boards are cheaper than other alternatives (3x cheaper than an Arduino Mega).
@@ -191,7 +149,7 @@ TODOs:
   * Try [this forked library](https://github.com/Bodmer/Adafruit-GFX-Library) by Bodmer.
   * Try https://taimienphi.vn/download-alphabix-19984
 
-  
+
 ### How-to
 
 This sections help overcome step-by-step the difficulties one might get (and I got) when dealing with this board.
@@ -219,4 +177,3 @@ For example, to display a 32x32 image of letter A on the module, I did the follo
 #include "letter_a_32.h"
 matrix.drawRGBBitmap(0,0,(const uint16_t *)letter_a_32,32,32);
 ```
-
