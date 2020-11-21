@@ -51,7 +51,7 @@ GND ←   N         B   →  D7
         N         D
 ```
 
-Source: See [this guide](https://youtu.be/z5G-HO3mFV0) at 1:36 for wiring
+> Source: See [this guide](https://youtu.be/z5G-HO3mFV0) at 1:36 for wiring
 
 Libraries:
 
@@ -59,7 +59,7 @@ Libraries:
 
 ### TODOs
 
-Make a connector PCB like this [DMDCon](https://cdn.shopify.com/s/files/1/0045/8932/products/DMDCON-1_1024x1024.jpg?v=1489536771) (its drawing can be found [here](https://cdn.shopify.com/s/files/1/0045/8932/products/DMDCON-1_1024x1024.jpg?v=1489536771)).
+Make a connector PCB like this [DMDCon](https://cdn.shopify.com/s/files/1/0045/8932/products/DMDCON-1_1024x1024.jpg?v=1489536771) (its drawing can be found [here](https://cdn.shopify.com/s/files/1/0045/8932/files/DMDCON_DMDConnector.pdf?100730)).
 
 But we will do it simpler: same wiring as above, the only modification for safety is that all N will go to GND. We will forget completely C, D and G.
 
@@ -157,7 +157,7 @@ Follow [this guide](https://learn.adafruit.com/adafruit-gfx-graphics-library/usi
 
 Pay attention to the cursor position. With custom font, the cursor will be at the bottom left corner of the letter, not at top-left anymore.
 
-## Control with an Arduino Mega
+## Control P5 fullcolor 64x32 with Arduino Mega
 
 Among the Arduino family, Arduino Mega is a must to control these 64x32 LED modules, because the "classic" Arduino Uno has not enough memory.
 
