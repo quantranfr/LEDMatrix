@@ -1,6 +1,6 @@
 # Control P10 32x16 Red with Arduino Uno
 
-Arduino is the first open-source platform for many people. As it has only a very limited memory, the only viable LED matrix module is a 32x16 one. Here I use a red monocolor one. The Vietnamese market only provides P10 form factor for this low resolution.
+Arduino is the first open-source platform for many people. As it has only a very limited memory, the only viable LED matrix module is a 32x16 one. Here I use a red monocolor one. The current (2020) Vietnamese market only provides the P10 form factor for this low resolution.
 
 ![](img/p10-uno.jpeg)
 

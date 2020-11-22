@@ -57,18 +57,10 @@ For example, to display a 32x32 image of letter A on the module, I did the follo
 matrix.drawRGBBitmap(0,0,(const uint16_t *)letter_a_32,32,32);
 ```
 
-## TODO list
+## Remarks
 
-Now we will need:
-
-* A proper wiring: make a shield to make connection easier (objective: no more dupont cables).
-* Find a way to display Vietnamese:
-
-  * Try [this tutorial](http://iot47.com/matrix-ledbai-13-thiet-ke-bo-font-tieng-viet/)
-  * See [this video](https://www.youtube.com/watch?v=upurbYGPvKo)
-  * Try https://anyconv.com/vi/chuyen-doi-ttf-sang-bmp/
-  * Try [this forked library](https://github.com/Bodmer/Adafruit-GFX-Library) by Bodmer.
-  * Try https://taimienphi.vn/download-alphabix-19984
+* It would be nice to have a proper shield for production (objective: no more dupont cables).
+* There are people trying to make a daisy-chain but it's not obvious.
 
 ## References
 

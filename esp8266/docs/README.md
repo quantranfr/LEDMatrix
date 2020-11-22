@@ -79,18 +79,14 @@ Follow [this guide](https://learn.adafruit.com/adafruit-gfx-graphics-library/usi
 
 Pay attention to the cursor position. With custom font, the cursor will be at the bottom left corner of the letter, not at top-left anymore.
 
-## TODO list
+## Remarks
 
-* Try to display Vietnamese text with the right font;
-* Figure out how to chain the 2nd module
-
-> On PxMatrix GitHub issue page, people got problem when they daisy-chained a 2nd module: color and line aberration.
+On PxMatrix GitHub issue page, people got problem when they daisy-chain a 2nd module (wiring how?): there will be color and line aberration on the 2nd one.
 
 Other intrinsic problems:
 
 * ESP8266 has not many GPIO pins left for other inputs (like buttons);
-* Messy cable management (maybe inherent to the library, cause one has to connect PI and PO);
-
+* Messy cable management (maybe inherent to the library, because we have to connect PI and PO);
 
 ## References
 

@@ -16,9 +16,14 @@ For that purpose, I propose to myself to test common LED matrix modules with com
 
 **Click on individual folders to see related docs.**
 
-## Roadmap
+## Remarks
 
-* Display Vietnamese
-* Chain modules
-* Control the LED module with Raspberry Pi (more pins to use, but more expensive and other complications (voltage...)): [here](https://github.com/hzeller/rpi-rgb-led-matrix/);
-* or with an ESP32 and [this library](https://github.com/mrfaptastic/ESP32-RGB64x32MatrixPanel-I2S-DMA).
+For now only the Raspberry Pi solution offers an easy way to daisy-chain LED modules.
+
+In the future I will investigate the following to know how to customize a font to use international alphabets:
+
+  * Try [this tutorial](http://iot47.com/matrix-ledbai-13-thiet-ke-bo-font-tieng-viet/)
+  * See [this video](https://www.youtube.com/watch?v=upurbYGPvKo)
+  * Try https://anyconv.com/vi/chuyen-doi-ttf-sang-bmp/
+  * Try [this forked library](https://github.com/Bodmer/Adafruit-GFX-Library) by Bodmer.
+  * Try https://taimienphi.vn/download-alphabix-19984
