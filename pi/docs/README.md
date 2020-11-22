@@ -2,7 +2,7 @@
 
 Using Raspberry Pi to control LED matrix modules is a costly solution, but it turns out that it's the easiest way to control daisy-chained modules.
 
-![](pi-128x32.jpeg)
+![](img/pi-128x32.jpeg)
 
 ## Pre-requisites
 
