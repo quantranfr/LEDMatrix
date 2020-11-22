@@ -2,6 +2,8 @@
 
 Using Raspberry Pi to control LED matrix modules is a costly solution, but it turns out that it's the easiest way to control daisy-chained modules.
 
+![](pi-128x32.jpeg)
+
 ## Pre-requisites
 
 Materials:
@@ -39,7 +41,8 @@ Librairies:
 ## Code setup
 
 1. Clone the library into a folder;
-2. Go to the subfolder `examples-api-use` and run `make`
+2. Go to the subfolder `examples-api-use` and run `make`;
+3. Open `/boot/config.txt` in sudo mode and change the line `dtparam=audio=on` to `dtparam=audio=off`.
 
 ## How-to
 
