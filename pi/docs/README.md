@@ -41,7 +41,7 @@ Librairies:
 ## Code setup
 
 1. Clone the library into a folder;
-2. Go to the subfolder `examples-api-use` and run `make`;
+2. Go to the subfolder `examples-api-use` and run `make`; this will generate the `demo` executable that we will use in our example below;
 3. Open `/boot/config.txt` in sudo mode and change the line `dtparam=audio=on` to `dtparam=audio=off`.
 
 ## How-to
